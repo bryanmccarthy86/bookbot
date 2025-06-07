@@ -1,5 +1,5 @@
 def get_num_words(book):
-    with open(f"books/{book}") as f:
+    with open(f"{book}") as f:
         get_book_text = f.read()
 #        print (get_book_text)
         book_array = get_book_text.split()
@@ -7,7 +7,7 @@ def get_num_words(book):
         print(f"Found {num_of_words} total words")
 
 def count_letters(book):
-    with open(f"books/{book}") as f:
+    with open(f"{book}") as f:
         get_book_text = f.read()
         lower_text = get_book_text.lower()
         characters = list(set(lower_text))
